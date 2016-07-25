@@ -60,7 +60,7 @@
 - (void)deviceInfo
 {
     UIDevice *device = [UIDevice currentDevice];
-    NSLog(@"\n设备名称：%@  设备型号：%@  系统版本：%@", device.name, device.model,  device.systemVersion);
+    NSLog(@"设备名称：%@  设备型号：%@  系统版本：%@", device.name, device.model,  device.systemVersion);
 }
 
 

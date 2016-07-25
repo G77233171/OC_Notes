@@ -15,6 +15,7 @@
 		E92FCF1E1D4373D00040ED4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E92FCF1C1D4373D00040ED4D /* LaunchScreen.storyboard */; };
 		E92FCF281D4374590040ED4D /* NXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E92FCF271D4374590040ED4D /* NXViewController.m */; };
 		E92FCF2D1D4379BB0040ED4D /* NXUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = E92FCF2C1D4379BB0040ED4D /* NXUtils.m */; };
+		E9E3A90A1D45E1E7001DC0B8 /* LimitInput.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E3A9091D45E1E7001DC0B8 /* LimitInput.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,8 @@
 		E92FCF2A1D43791C0040ED4D /* NXNotes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NXNotes.h; sourceTree = "<group>"; };
 		E92FCF2B1D4379BB0040ED4D /* NXUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXUtils.h; sourceTree = "<group>"; };
 		E92FCF2C1D4379BB0040ED4D /* NXUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXUtils.m; sourceTree = "<group>"; };
+		E9E3A9081D45E1E7001DC0B8 /* LimitInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LimitInput.h; sourceTree = "<group>"; };
+		E9E3A9091D45E1E7001DC0B8 /* LimitInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LimitInput.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +52,7 @@
 		E92FCF021D4373D00040ED4D = {
 			isa = PBXGroup;
 			children = (
+				E9E3A9041D45E137001DC0B8 /* Category */,
 				E92FCF291D4378FD0040ED4D /* Tools */,
 				E92FCF251D4374310040ED4D /* Empty */,
 				E92FCF0D1D4373D00040ED4D /* OC_Notes */,
@@ -105,6 +109,39 @@
 				E92FCF2C1D4379BB0040ED4D /* NXUtils.m */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		E9E3A9041D45E137001DC0B8 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				E9E3A9051D45E1CA001DC0B8 /* NSString */,
+				E9E3A9061D45E1CA001DC0B8 /* UITextField&UITextView */,
+				E9E3A9071D45E1CA001DC0B8 /* UIView */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		E9E3A9051D45E1CA001DC0B8 /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
+		E9E3A9061D45E1CA001DC0B8 /* UITextField&UITextView */ = {
+			isa = PBXGroup;
+			children = (
+				E9E3A9081D45E1E7001DC0B8 /* LimitInput.h */,
+				E9E3A9091D45E1E7001DC0B8 /* LimitInput.m */,
+			);
+			path = "UITextField&UITextView";
+			sourceTree = "<group>";
+		};
+		E9E3A9071D45E1CA001DC0B8 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +217,7 @@
 				E92FCF161D4373D00040ED4D /* RootViewController.m in Sources */,
 				E92FCF131D4373D00040ED4D /* AppDelegate.m in Sources */,
 				E92FCF281D4374590040ED4D /* NXViewController.m in Sources */,
+				E9E3A90A1D45E1E7001DC0B8 /* LimitInput.m in Sources */,
 				E92FCF2D1D4379BB0040ED4D /* NXUtils.m in Sources */,
 				E92FCF101D4373D00040ED4D /* main.m in Sources */,
 			);
@@ -334,6 +372,7 @@
 				E92FCF241D4373D00040ED4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
