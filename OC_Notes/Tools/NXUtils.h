@@ -39,4 +39,9 @@
  **/
 + (UITextField *)initTextFieldWithFrame:(CGRect)frame placeholder:(NSString *)placeholder secureEntry:(BOOL)isSecureEntry textFont:(CGFloat)font;
 
+/**
+ * 初始化UIScrollView,并设置contentSize
+ **/
++ (UIScrollView *)initScrollViewWithFrame:(CGRect)frame contentSize:(CGSize)contentSize;
+
 @end

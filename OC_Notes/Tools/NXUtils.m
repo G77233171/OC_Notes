@@ -80,4 +80,16 @@
     return textField;
 }
 
++ (UIScrollView *)initScrollViewWithFrame:(CGRect)frame contentSize:(CGSize)contentSize
+{
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:frame];
+    scrollView.contentSize = contentSize;
+    scrollView.pagingEnabled = YES;
+    scrollView.showsVerticalScrollIndicator = NO;
+    scrollView.showsHorizontalScrollIndicator = NO;
+    
+    
+    return scrollView;
+}
+
 @end

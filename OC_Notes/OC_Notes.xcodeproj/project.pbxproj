@@ -15,7 +15,13 @@
 		E92FCF1E1D4373D00040ED4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E92FCF1C1D4373D00040ED4D /* LaunchScreen.storyboard */; };
 		E92FCF281D4374590040ED4D /* NXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E92FCF271D4374590040ED4D /* NXViewController.m */; };
 		E92FCF2D1D4379BB0040ED4D /* NXUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = E92FCF2C1D4379BB0040ED4D /* NXUtils.m */; };
+		E95ADD4D1D471CA000E1FA2F /* NXObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E95ADD4C1D471CA000E1FA2F /* NXObject.m */; };
+		E95ADD501D471DCD00E1FA2F /* BaiduTranslator.m in Sources */ = {isa = PBXBuildFile; fileRef = E95ADD4F1D471DCD00E1FA2F /* BaiduTranslator.m */; };
+		E95ADD531D4754C200E1FA2F /* SpeechSynthesizer.m in Sources */ = {isa = PBXBuildFile; fileRef = E95ADD521D4754C200E1FA2F /* SpeechSynthesizer.m */; };
 		E9E3A90A1D45E1E7001DC0B8 /* LimitInput.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E3A9091D45E1E7001DC0B8 /* LimitInput.m */; };
+		E9E3A9161D460D34001DC0B8 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E3A9151D460D34001DC0B8 /* UIView+Frame.m */; };
+		E9E3A91A1D46114F001DC0B8 /* UIColor+NXCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E3A9191D46114F001DC0B8 /* UIColor+NXCategory.m */; };
+		E9E3A91D1D4617E7001DC0B8 /* NSString+NXCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E3A91C1D4617E7001DC0B8 /* NSString+NXCategory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,8 +40,20 @@
 		E92FCF2A1D43791C0040ED4D /* NXNotes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NXNotes.h; sourceTree = "<group>"; };
 		E92FCF2B1D4379BB0040ED4D /* NXUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXUtils.h; sourceTree = "<group>"; };
 		E92FCF2C1D4379BB0040ED4D /* NXUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXUtils.m; sourceTree = "<group>"; };
+		E95ADD4B1D471CA000E1FA2F /* NXObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXObject.h; sourceTree = "<group>"; };
+		E95ADD4C1D471CA000E1FA2F /* NXObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXObject.m; sourceTree = "<group>"; };
+		E95ADD4E1D471DCD00E1FA2F /* BaiduTranslator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiduTranslator.h; sourceTree = "<group>"; };
+		E95ADD4F1D471DCD00E1FA2F /* BaiduTranslator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaiduTranslator.m; sourceTree = "<group>"; };
+		E95ADD511D4754C200E1FA2F /* SpeechSynthesizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeechSynthesizer.h; sourceTree = "<group>"; };
+		E95ADD521D4754C200E1FA2F /* SpeechSynthesizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeechSynthesizer.m; sourceTree = "<group>"; };
 		E9E3A9081D45E1E7001DC0B8 /* LimitInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LimitInput.h; sourceTree = "<group>"; };
 		E9E3A9091D45E1E7001DC0B8 /* LimitInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LimitInput.m; sourceTree = "<group>"; };
+		E9E3A9141D460D34001DC0B8 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		E9E3A9151D460D34001DC0B8 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		E9E3A9181D46114F001DC0B8 /* UIColor+NXCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+NXCategory.h"; sourceTree = "<group>"; };
+		E9E3A9191D46114F001DC0B8 /* UIColor+NXCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+NXCategory.m"; sourceTree = "<group>"; };
+		E9E3A91B1D4617E7001DC0B8 /* NSString+NXCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NXCategory.h"; sourceTree = "<group>"; };
+		E9E3A91C1D4617E7001DC0B8 /* NSString+NXCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NXCategory.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +115,8 @@
 			children = (
 				E92FCF261D4374590040ED4D /* NXViewController.h */,
 				E92FCF271D4374590040ED4D /* NXViewController.m */,
+				E95ADD4B1D471CA000E1FA2F /* NXObject.h */,
+				E95ADD4C1D471CA000E1FA2F /* NXObject.m */,
 			);
 			path = Empty;
 			sourceTree = "<group>";
@@ -107,6 +127,10 @@
 				E92FCF2A1D43791C0040ED4D /* NXNotes.h */,
 				E92FCF2B1D4379BB0040ED4D /* NXUtils.h */,
 				E92FCF2C1D4379BB0040ED4D /* NXUtils.m */,
+				E95ADD4E1D471DCD00E1FA2F /* BaiduTranslator.h */,
+				E95ADD4F1D471DCD00E1FA2F /* BaiduTranslator.m */,
+				E95ADD511D4754C200E1FA2F /* SpeechSynthesizer.h */,
+				E95ADD521D4754C200E1FA2F /* SpeechSynthesizer.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -115,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				E9E3A9051D45E1CA001DC0B8 /* NSString */,
+				E9E3A9171D46110F001DC0B8 /* UIColor */,
 				E9E3A9061D45E1CA001DC0B8 /* UITextField&UITextView */,
 				E9E3A9071D45E1CA001DC0B8 /* UIView */,
 			);
@@ -124,6 +149,8 @@
 		E9E3A9051D45E1CA001DC0B8 /* NSString */ = {
 			isa = PBXGroup;
 			children = (
+				E9E3A91B1D4617E7001DC0B8 /* NSString+NXCategory.h */,
+				E9E3A91C1D4617E7001DC0B8 /* NSString+NXCategory.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -140,8 +167,19 @@
 		E9E3A9071D45E1CA001DC0B8 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
+				E9E3A9141D460D34001DC0B8 /* UIView+Frame.h */,
+				E9E3A9151D460D34001DC0B8 /* UIView+Frame.m */,
 			);
 			path = UIView;
+			sourceTree = "<group>";
+		};
+		E9E3A9171D46110F001DC0B8 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				E9E3A9181D46114F001DC0B8 /* UIColor+NXCategory.h */,
+				E9E3A9191D46114F001DC0B8 /* UIColor+NXCategory.m */,
+			);
+			path = UIColor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +213,7 @@
 				TargetAttributes = {
 					E92FCF0A1D4373D00040ED4D = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 7V426XFGW3;
 					};
 				};
 			};
@@ -214,12 +253,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E95ADD501D471DCD00E1FA2F /* BaiduTranslator.m in Sources */,
 				E92FCF161D4373D00040ED4D /* RootViewController.m in Sources */,
 				E92FCF131D4373D00040ED4D /* AppDelegate.m in Sources */,
 				E92FCF281D4374590040ED4D /* NXViewController.m in Sources */,
+				E9E3A91A1D46114F001DC0B8 /* UIColor+NXCategory.m in Sources */,
+				E9E3A9161D460D34001DC0B8 /* UIView+Frame.m in Sources */,
 				E9E3A90A1D45E1E7001DC0B8 /* LimitInput.m in Sources */,
 				E92FCF2D1D4379BB0040ED4D /* NXUtils.m in Sources */,
 				E92FCF101D4373D00040ED4D /* main.m in Sources */,
+				E95ADD4D1D471CA000E1FA2F /* NXObject.m in Sources */,
+				E95ADD531D4754C200E1FA2F /* SpeechSynthesizer.m in Sources */,
+				E9E3A91D1D4617E7001DC0B8 /* NSString+NXCategory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,12 +376,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = OC_Notes/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.excised.OC-Notes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -344,12 +390,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = OC_Notes/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.excised.OC-Notes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

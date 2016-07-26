@@ -8,7 +8,7 @@
 //限制textField和textView输入长度
 //添加一行代码实现限制文本输入框输入长度的方法
 //1. 导入 LimitInput.h和LimitInput.m文件
-//2. 在需要的时候，给输入框添加  [textField setValue:@4 forKey:@"LimitInput"]; 代码即可
+//2. 在需要的时候，给输入框添加  [inputText setValue:@4 forKey:@"LimitInput"]; 代码即可
 
 
 

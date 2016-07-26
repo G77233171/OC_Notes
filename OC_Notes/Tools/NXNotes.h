@@ -11,5 +11,8 @@
 #define NXNotes_h
 
 #import "NXUtils.h"
+#import "NSString+NXCategory.h"
+#import "UIColor+NXCategory.h"
+#import "UIView+Frame.h"
 
 #endif /* NXNotes_h */

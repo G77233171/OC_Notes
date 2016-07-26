@@ -7,9 +7,11 @@
 //
 
 #import "RootViewController.h"
+#import "BaiduTranslator.h"
 
 @interface RootViewController ( )<UITextFieldDelegate>
 
+@property (nonatomic, strong)BaiduTranslator *baiduTranslator;
 
 @end
 
@@ -23,12 +25,23 @@
     tipsLabel.backgroundColor = [UIColor groupTableViewBackgroundColor];
     [self.view addSubview:tipsLabel];
     
-    UITextField *text = [NXUtils initTextFieldWithFrame:CGRectMake(20, 200, self.view.frame.size.width - 40, 50) placeholder:@"输入框blabla" secureEntry:NO textFont:15];
+    UITextField *text = [NXUtils initTextFieldWithFrame:CGRectMake(20, 200, self.view.frame.size.width - 40, 30) placeholder:@"请输入要翻译的文字" secureEntry:NO textFont:15];
     text.backgroundColor = [UIColor groupTableViewBackgroundColor];
     text.delegate = self;
-   // [textField setValue:@4 forKey:@"LimitInput"];
+    [text setValue:@20 forKey:@"LimitInput"];
     [self.view addSubview:text];
     
+    NSString *date = [NSString stringWithDateFormat:@"2016-07-08 HH:mm:ss"];
+    NSLog(@"date is: %@",date);
+    
+    
+    //[self baiduFanyi];
+    _baiduTranslator = [BaiduTranslator sharedTranslator];
+    _baiduTranslator.targetLanguage = BDTranslateLanguage_cht;
+    _baiduTranslator.speech = NO;
+    _baiduTranslator.translatedResults = ^(NSString *results){
+        tipsLabel.text = results;
+    };
 }
 
 - (void)didReceiveMemoryWarning {
@@ -41,8 +54,12 @@
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     [textField resignFirstResponder];
-
     return YES;
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField
+{
+    [_baiduTranslator translateString:textField.text];
 }
 
 @end
