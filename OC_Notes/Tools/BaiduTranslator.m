@@ -7,7 +7,6 @@
 //
 
 #import "BaiduTranslator.h"
-#import "SpeechSynthesizer.h"
 #import "NSString+NXCategory.h"
 
 @interface BaiduTranslator ()
@@ -50,7 +49,6 @@
     
     //网络请求，获取翻译结果
     //iOS7以上可以使用NSURLSession，也可以使用第三方的比如: AFNetworking
-   __block NSString *result;
     NSURL *url = [NSURL URLWithString:[self splicingCompleteRequestAddress]];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     NSURLSession *session = [NSURLSession sharedSession];
@@ -59,22 +57,13 @@
         if (error)
         {
             NSLog(@"%s\n%@", __func__, error);
-            result = @"error request";
+            NSLog(@"error request");
         }
         else
         {
             NSDictionary *dict =[NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
-            NSLog(@"dict：%@", dict);
-            result = dict[@"trans_result"][0][@"dst"];
-            NSLog(@"result: %@", result);
-            //en-US
-            if (self.translatedResults) self.translatedResults(result);
-            if (self.speech)
-            {
-                SpeechSynthesizer *speechSynthes = [SpeechSynthesizer sharedSpeechSynthesizer];
-                speechSynthes.language = @"en-US";
-                [speechSynthes startSpeak:result];
-            }
+            NSArray *results = [NSArray arrayWithObject:dict[@"trans_result"]];
+            [self.delegate baiduTranslatorDidFinishedTranslated:[results firstObject]];
         }
         
         
@@ -109,6 +98,7 @@
     NSString *salt = @"";
     for (int i = 0 ; i < 8; i ++)
     {
+       // arc4random_uniform(10); // 生成一个0~9的随机数
         salt = [salt stringByAppendingFormat:@"%i", arc4random()%10];
     }
     _salt = salt;
@@ -126,7 +116,6 @@
 {
     _source = @"auto";
     _catalanguage = @"zh";
-    _speech = NO;
 }
 
 

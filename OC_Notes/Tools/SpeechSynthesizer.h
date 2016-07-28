@@ -11,6 +11,16 @@
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVSpeechSynthesis.h>
 
+typedef NS_ENUM(NSInteger, NXSpeechVoiceLanguage)
+{
+    NXSpeechVoiceLanguageDefault = 0, //!<中文
+    NXSpeechVoiceLanguageEnglish,       //!<英文
+    NXSpeechVoiceLanguageJapanese,     //!<日语
+    NXSpeechVoiceLanguageHongKong,  //!<中文-香港
+    NXSpeechVoiceLanguageTaiWan       //!<中文-台湾
+};
+
+
 @interface SpeechSynthesizer : NSObject
 
 + (SpeechSynthesizer *)sharedSpeechSynthesizer;
@@ -20,7 +30,9 @@
 /**
  * 以下属性可根据需求选择实现
  **/
-@property (nonatomic) NSString *language;//!<语言
+@property (nonatomic) NSString *language;//!<直接设置语言
+@property (nonatomic) NXSpeechVoiceLanguage voiceLanguage;//!<枚举法设置语言
 @property (nonatomic) void(^speechSynthesizerDidFinishedSpeech)();//!<合成结束的回调
+
 
 @end

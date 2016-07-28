@@ -67,6 +67,13 @@
     if (self.speechSynthesizer) [self.speechSynthesizer stopSpeakingAtBoundary:AVSpeechBoundaryImmediate];
 }
 
+- (void)setVoiceLanguage:(NXSpeechVoiceLanguage)voiceLanguage
+{
+    NSArray *languages = @[@"zh-CN", @"en-US", @"ja-JP", @"zh-HK", @"zh-TW"];
+    if (voiceLanguage >= 0 && voiceLanguage + 1 < [languages count]) self.language = languages[voiceLanguage];
+}
+
+
 //合成结束的回调方法
 - (void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer didFinishSpeechUtterance:(AVSpeechUtterance *)utterance
 {
