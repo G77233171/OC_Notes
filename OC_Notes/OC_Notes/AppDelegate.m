@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "NXGuideView.h"
 #import "RootViewController.h"
 
 @interface AppDelegate ()
@@ -27,6 +28,14 @@
     //RootViewController *rootCtl = [NSClassFromString(@"RootViewController") new];
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:rootCtl];
     [self.window makeKeyAndVisible];
+    
+    //guide
+    NSArray *imageSource = @[@"theme_08.jpg", @"theme_03.jpg"];
+    NXGuideView *guideView = [[NXGuideView alloc] initGuideViewWithImageSource:imageSource];
+    //guideView.buttonTitle = @"马上开始";
+    [guideView show];
+    //一直显示
+    //[guideView alwaysShow];
     return YES;
 }
 

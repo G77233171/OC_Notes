@@ -65,8 +65,6 @@
             NSArray *results = [NSArray arrayWithObject:dict[@"trans_result"]];
             [self.delegate baiduTranslatorDidFinishedTranslated:[results firstObject]];
         }
-        
-        
     }];
     [dataTask resume];
 }
@@ -98,8 +96,10 @@
     NSString *salt = @"";
     for (int i = 0 ; i < 8; i ++)
     {
-       // arc4random_uniform(10); // 生成一个0~9的随机数
-        salt = [salt stringByAppendingFormat:@"%i", arc4random()%10];
+//        生成一个0~9的随机数
+//        arc4random_uniform(10);
+//        arc4random()%10
+        salt = [salt stringByAppendingFormat:@"%i", arc4random_uniform(10)];
     }
     _salt = salt;
     

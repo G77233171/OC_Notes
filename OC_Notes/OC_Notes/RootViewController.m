@@ -10,6 +10,7 @@
 #import "BaiduTranslator.h"
 //iOS7及以上可以引入SpeechSynthesizer.h，朗读翻译结果
 #import "SpeechSynthesizer.h"
+#import "NXGuideView.h"
 
 @interface RootViewController ( )<UITextFieldDelegate, BaiduTranslateDelegate>
 
@@ -25,6 +26,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+
     _tipsLabel = [NXUtils initLabelWithFrame:CGRectMake(20, 100, self.view.frame.size.width - 40, 50) font:15 text:@"下午茶时间到了，赶快来领取吧！巴拉拉bla"];
     _tipsLabel.backgroundColor = [UIColor groupTableViewBackgroundColor];
     [self.view addSubview:_tipsLabel];
@@ -45,7 +47,7 @@
 
     //系统支持的语种
     //NSLog(@"%@", [AVSpeechSynthesisVoice speechVoices]);
-
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -75,7 +77,9 @@
         NSString *dst = dict[@"dst"];
         string = [string stringByAppendingString:dst];
     }
-    _tipsLabel.text = string;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        _tipsLabel.text = string;
+    });
    
     //朗读翻译结果
     SpeechSynthesizer *speechSynthes = [SpeechSynthesizer sharedSpeechSynthesizer];

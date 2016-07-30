@@ -7,6 +7,8 @@
 //
 
 #import "NSString+NXCategory.h"
+#import <CommonCrypto/CommonDigest.h>
+#import <CommonCrypto/CommonCryptor.h>
 
 @implementation NSString (NXCategory)
 

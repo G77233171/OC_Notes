@@ -18,6 +18,7 @@
 		E95ADD4D1D471CA000E1FA2F /* NXObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E95ADD4C1D471CA000E1FA2F /* NXObject.m */; };
 		E95ADD501D471DCD00E1FA2F /* BaiduTranslator.m in Sources */ = {isa = PBXBuildFile; fileRef = E95ADD4F1D471DCD00E1FA2F /* BaiduTranslator.m */; };
 		E95ADD531D4754C200E1FA2F /* SpeechSynthesizer.m in Sources */ = {isa = PBXBuildFile; fileRef = E95ADD521D4754C200E1FA2F /* SpeechSynthesizer.m */; };
+		E95ADD7B1D4C4C5F00E1FA2F /* NXGuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = E95ADD7A1D4C4C5F00E1FA2F /* NXGuideView.m */; };
 		E9E3A90A1D45E1E7001DC0B8 /* LimitInput.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E3A9091D45E1E7001DC0B8 /* LimitInput.m */; };
 		E9E3A9161D460D34001DC0B8 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E3A9151D460D34001DC0B8 /* UIView+Frame.m */; };
 		E9E3A91A1D46114F001DC0B8 /* UIColor+NXCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E3A9191D46114F001DC0B8 /* UIColor+NXCategory.m */; };
@@ -46,6 +47,8 @@
 		E95ADD4F1D471DCD00E1FA2F /* BaiduTranslator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaiduTranslator.m; sourceTree = "<group>"; };
 		E95ADD511D4754C200E1FA2F /* SpeechSynthesizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeechSynthesizer.h; sourceTree = "<group>"; };
 		E95ADD521D4754C200E1FA2F /* SpeechSynthesizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeechSynthesizer.m; sourceTree = "<group>"; };
+		E95ADD791D4C4C5F00E1FA2F /* NXGuideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXGuideView.h; sourceTree = "<group>"; };
+		E95ADD7A1D4C4C5F00E1FA2F /* NXGuideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXGuideView.m; sourceTree = "<group>"; };
 		E9E3A9081D45E1E7001DC0B8 /* LimitInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LimitInput.h; sourceTree = "<group>"; };
 		E9E3A9091D45E1E7001DC0B8 /* LimitInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LimitInput.m; sourceTree = "<group>"; };
 		E9E3A9141D460D34001DC0B8 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
@@ -70,6 +73,8 @@
 		E92FCF021D4373D00040ED4D = {
 			isa = PBXGroup;
 			children = (
+				E95ADD711D4B58F700E1FA2F /* Controller */,
+				E95ADD721D4B58F700E1FA2F /* Views */,
 				E9E3A9041D45E137001DC0B8 /* Category */,
 				E92FCF291D4378FD0040ED4D /* Tools */,
 				E92FCF251D4374310040ED4D /* Empty */,
@@ -133,6 +138,30 @@
 				E95ADD521D4754C200E1FA2F /* SpeechSynthesizer.m */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		E95ADD711D4B58F700E1FA2F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E95ADD721D4B58F700E1FA2F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E95ADD731D4B595800E1FA2F /* guidepage */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E95ADD731D4B595800E1FA2F /* guidepage */ = {
+			isa = PBXGroup;
+			children = (
+				E95ADD791D4C4C5F00E1FA2F /* NXGuideView.h */,
+				E95ADD7A1D4C4C5F00E1FA2F /* NXGuideView.m */,
+			);
+			path = guidepage;
 			sourceTree = "<group>";
 		};
 		E9E3A9041D45E137001DC0B8 /* Category */ = {
@@ -265,6 +294,7 @@
 				E95ADD4D1D471CA000E1FA2F /* NXObject.m in Sources */,
 				E95ADD531D4754C200E1FA2F /* SpeechSynthesizer.m in Sources */,
 				E9E3A91D1D4617E7001DC0B8 /* NSString+NXCategory.m in Sources */,
+				E95ADD7B1D4C4C5F00E1FA2F /* NXGuideView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,7 +357,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -365,7 +395,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
